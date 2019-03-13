@@ -1,0 +1,32 @@
+<html>
+<head><title>JS 12</title></head>
+<body id="1">
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+<script type="text/javascript">
+var b=document.createElement("input");
+b.setAttribute('type','button');
+b.setAttribute('value','Add');
+b.setAttribute('id','b');
+b.setAttribute('onclick','check()');
+var pelement=document.getElementById("1");
+pelement.appendChild(b);
+function check(){
+var x=document.getElementsByTagName("INPUT");
+var i;
+var arr=x[0].attributes;
+for(i=0;i<arr.length;i++){
+	alert("All Elements :"+arr[i].name + " "+arr[i].value);
+}
+
+
+for(i=0;i<x.length;i++){
+	alert("Add click "+x[i].getAttribute("id"));
+
+	}
+} 
+</script>
+</body>
+</html>

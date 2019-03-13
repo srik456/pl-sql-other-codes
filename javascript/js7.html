@@ -1,0 +1,22 @@
+<html>
+<body>
+<p class="odd">FirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirstFirst</p>
+<p class="even">SecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecondSecond</p>
+<p class="odd">ThirdThirdThirdThirdThirdThirdThirdThirdThirdThirdThirdThirdThirdThirdThirdThirdThird</p>
+<p class="even">FourthFourthFourthFourthFourthFourthFourthFourthFourthFourthFourthFourthFourthFourth</p>
+<button onclick="oddeven()">Try It</button>
+<script>
+function oddeven(){
+var x=document.getElementsByClassName("odd");
+var y=document.getElementsByClassName("even");
+var i;
+for(i=0;i<x.length;i++){
+x[i].style.backgroundColor="orange";
+}
+for(i=0;i<y.length;i++){
+y[i].style.backgroundColor="green";
+}
+}
+</script>
+</body>
+</html>

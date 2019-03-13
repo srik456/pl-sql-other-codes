@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>JS 5</title>
+<script>
+function add(){
+a=document.getElementById("n1").value;
+b=document.getElementById("n2").value;
+result=eval(a)+eval(b);
+document.getElementById("r1").value=result;
+}
+function sub(){
+a=document.getElementById("n1").value;
+b=document.getElementById("n2").value;
+result=eval(a)-eval(b);
+document.getElementById("r1").value=result;
+}
+function mul(){
+a=document.getElementById("n1").value;
+b=document.getElementById("n2").value;
+result=eval(a)*eval(b);
+document.getElementById("r1").value=result;
+
+}
+function div(){
+a=document.getElementById("n1").value;
+b=document.getElementById("n2").value;
+result=eval(a)/eval(b);
+document.getElementById("r1").value=result;
+}
+function nodeTest(){
+ var aNodes=document.getElementsByTagName("input");
+ alert(aNodes.length);
+
+}
+</script>
+</head>
+<body>
+<form>
+Number 1<input id="n1" type="number" name="num1"><br>
+Number 2<input id="n2" type="number" name="num2"><br>
+Result<input id="r1" type="number" name="result"><br>
+<input type="button" name="OK" value="ADD" onclick="add()">
+<input type="button" name="OK" value="SUBTRACT" onclick="sub()">
+<input type="button" name="OK" value="MULTIPLY" onclick="mul()">
+<input type="button" name="OK" value="DIVIDE" onclick="div()">
+<input type="button" name="OK" value="NODES" onclick="nodeTest()">
+
+
+</form>
+</body>
+</html>

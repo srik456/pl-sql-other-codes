@@ -1,0 +1,25 @@
+<html>
+<head>
+
+<script>
+flag=true;
+function change(){
+if(flag==true){
+var x=document.getElementById("img1");
+x.src="flower1.jpg";
+flag=false;
+}
+else{
+x.src="flower.jpg";
+flag=true;
+}
+}
+</script>
+</head>
+<body>
+<img id="img1" src="flower.jpg" alt="blue rose">
+Image change<button onclick="change()">change</button>
+
+</script>
+</body>
+</html> 

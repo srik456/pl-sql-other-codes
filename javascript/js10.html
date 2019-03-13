@@ -1,0 +1,44 @@
+<html>
+<head><title>Js 10</title></head>
+<body id="1">
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+<script>
+function nodeadd(){
+var para=document.createElement("p");
+var node=document.createTextNode("This is new.");
+para.appendChild(node);
+var parentelement=document.getElementById("div1");
+parentelement.appendChild(para);
+
+}
+function nodeAdd1(){
+var head1=document.createElement("h1");
+var node1=document.createTextNode("This is new header text.");
+head1.appendChild(node1);
+var parentelement1=document.getElementById("1");
+parentelement1.appendChild(head1);
+}
+function nodeAdd2(){
+var b=document.createElement("button");
+var node1=document.createTextNode("This is a button.");
+b.appendChild(node1);
+var parentelement2=document.getElementById("1");
+parentelement2.appendChild(b);
+}
+function nodeAdd3(){
+var b=document.createElement("br");
+var node1=document.createTextNode("This is a break tag.");
+b.appendChild(node1);
+var parentelement2=document.getElementById("1");
+parentelement2.appendChild(b);
+}
+</script>
+<button onclick="nodeadd()" value="OK">Click</button>
+<button onclick="nodeAdd1()" value="ok">Click 2</button>
+<button onclick="nodeAdd2()" value="ok">Click 3</button>
+<button onclick="nodeAdd3()" value="ok">Click 4</button>
+</body>
+</html>

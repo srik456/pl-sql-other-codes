@@ -1,0 +1,22 @@
+<html>
+<head><title>Attribute concept</title></head>
+<body>
+<script>
+function check(){
+var x=document.getElementsByTagName("INPUT");
+var i;
+var m_attr=x[0].attributes;
+for(i=0;i<m_attr.length;i++){
+alert(m_attr[i].name+" "+m_attr[i].value);
+
+}
+for(i=0;i<x.length;i++){
+alert("Add clicked   "+x[i].getAttribute("type"));
+}
+}
+
+</script>
+<input  id="b1" type="button" value = "ok" name="click">
+<button  onclick="check()" >Click Here</button>
+</body>
+</html>

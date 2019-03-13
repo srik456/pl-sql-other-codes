@@ -1,0 +1,26 @@
+<html>
+<head><title>JS 13</title></head>
+<body id="1">
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+<script type="text/javascript">
+var barr=new Array(3);
+var i;
+var v=1
+for(i=0;i<barr.length;i++){
+    barr[i]=document.createElement('input');
+    barr[i].setAttribute('type','button');
+    var s=v.toString();
+    //alert(s);
+    barr[i].setAttribute('value','Add');
+    var parent=document.getElementById("div1");
+    parent.appendChild(bArr[i]);
+    v+=1;
+}
+
+
+</script>
+</body>
+</html>

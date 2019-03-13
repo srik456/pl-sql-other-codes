@@ -1,0 +1,38 @@
+<html>
+<head><title>JS 14</title></head>
+<body id="1">
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+<script type="text/javascript">
+var urlarr=['flower.jpg','flower1.jpg','lotus.jpg','hibiscus.jpg','Dandelion.jpg'];
+   var i=0;
+    var pre;
+    alert(pre);
+    while(true){
+    var m_img=document.createElement("img");
+    if(i==3){
+    break;
+    }
+     var rand=Math.floor((Math.random()*4));
+     if(pre==rand){
+     alert("repeat"+pre);
+     continue;     
+
+     }
+     alert(rand);
+    pre=rand;
+     i++;
+    m_img.setAttribute('src',urlarr[rand]);
+    m_img.setAttribute('width','200px');
+    m_img.setAttribute('height','200px');
+    var par=document.getElementById("div1");
+    par.appendChild(m_img);
+     
+  }
+
+ 
+</script>
+</body>
+</html>

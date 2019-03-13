@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Date js</title>
+<script type="text/javascript">
+document.write("In Head Hello World");
+function checkDate(){
+var today=new Date();
+alert(today.getDay());
+alert(today+" "+today.getDate()+" "+today.getMonth()+" "+today.getFullYear()+" "+today.getHours()+" "+today.getMinutes()+" "+today.getSeconds());
+}
+</script>
+</head>
+<body>
+<h1>In Body</h1>
+<form>
+<input type="button" value="ChkDate" onclick="checkDate()">
+</form>
+</body>
+</html>

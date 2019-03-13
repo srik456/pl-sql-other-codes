@@ -1,0 +1,14 @@
+<html>
+<head><title>JS 15</title></head>
+<body id="1">
+<script type="text/javascript">
+var i;
+for(i=0;i<3;i++){
+var rand=Math.floor(Math.random()*4);
+alert(rand);
+}
+
+ 
+</script>
+</body>
+</html>
